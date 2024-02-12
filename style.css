@@ -1,0 +1,91 @@
+body{
+    background-color: #cfcfcf;
+    font-size: 14px;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: auto;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+}
+.payment-progress{
+    border: 1px solid #919191;
+    background-color: #fff;
+    padding: 20px 30px;
+    max-width: 40rem;
+    border-radius: 20px;
+    margin: 0 auto;  
+
+    .item-name{
+        text-align: center;
+    }
+}
+.progress-indicator{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.progress-check-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width:30%;
+    height: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    hr{
+        flex: 1;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        margin: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        border:4px solid #cfcfcf;
+        background: #fff;
+        border-radius: 50%;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      :hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      input:checked ~ .checkmark {
+        border-color: #2196F3;
+      }
+}
+.progress-check-box:last-child{
+    width: 25px;
+}
+.progress-status{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 700;
+    color: #2196F3;
+}
