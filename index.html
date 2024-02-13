@@ -17,16 +17,16 @@
                 <label class="progress-check-box">
                     <input type="checkbox" checked="checked" name="radio">
                     <span class="checkmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20" width="20" fill="#2196F3"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
-                        <span class="progress-status">Paid</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20" width="20" fill="#659432"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                        <span class="progress-status completed">Paid</span>
                     </span>                    
                     <hr>
                     
                   </label>
                   <label class="progress-check-box">
                     <input type="checkbox" name="radio">
-                    <span class="checkmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20" width="20" fill="#2196F3"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                    <span class="checkmark processing-status">
+                        
                         <span class="progress-status">Confirming</span>
                     </span>  
                     <hr>
@@ -34,18 +34,39 @@
                   </label>
                   <label class="progress-check-box">
                     <input type="checkbox" name="radio">
-                    <span class="checkmark"></span>
+                    <span class="checkmark">
+                        <span class="progress-status">Processing</span>
+                    </span>
                     <hr>
-                    <span class="progress-status">Paid</span>
+                    
                   </label>
                   <label class="progress-check-box">
                     <input type="checkbox" name="radio">
-                    <span class="checkmark"></span>
-                    <span class="progress-status">Paid</span>
+                    <span class="checkmark">
+                        <span class="progress-status">Complete</span>
+                    </span>                    
                   </label>
             </div>
+            <div class="payment-btn-section">
+                <button class="btn-payment">Pay 0.05 ETH via MetaMask</button>
+            </div>
+            <div class="payment-btn-section">
+                <p>Payment of 0.05 Received</p>
+                <button class="btn-payment confirmations">Confrimations: 0 / 10</button>
+            </div>
+            <div class="payment-btn-section">
+                <p>Payment of 0.05 Confirmed</p>
+                <button class="btn-payment confirmations">Please wait...</button>
+            </div>
+            <div class="payment-btn-section">
+                <p>Success.</p>
+                <button class="btn-payment succeed">Return to Merchant</button>
+            </div>
         </div>
-
+    </div>
+    <div class="footer-ccp">
+        <p>Copyright</p>
+        <a href="#">Cancel Payment</a>
     </div>
 </body>
 </html>
