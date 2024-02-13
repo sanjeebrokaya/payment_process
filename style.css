@@ -143,3 +143,8 @@ body{
     text-decoration: none;
     font-weight: 500;
 }
+@media (max-width:680px) {
+    .payment-progress{
+        margin: 0 15px;
+    }
+}
