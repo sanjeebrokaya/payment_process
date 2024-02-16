@@ -101,6 +101,11 @@ body{
   background-size: 98% !important;
   border-color: #313131 !important;
 }
+.completed-status{
+    background-image: url('images/checkmark.png') !important;
+    background-position: center !important;
+    background-repeat: no-repeat;  
+}
 .payment-btn-section{
     margin-top: 20px;
     text-align: center;
